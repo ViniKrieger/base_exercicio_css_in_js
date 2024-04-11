@@ -9,7 +9,18 @@ export const Formulario = styled.form`
   display: flex;
   align-items: center;
 
-  @media (max-widht: 768px) {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-principal);
+    content: '';
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
     height: auto;
     padding: 24px 0;
   }
@@ -19,7 +30,7 @@ export const TituloHero = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
 
-  @media (max-widht: 768px) {
+  @media (max-width: 768px) {
     font-size: 32px;
   }
 `
